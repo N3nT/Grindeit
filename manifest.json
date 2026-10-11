@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Grindeit",
+    "version": "0.0.1",
+    "description": "A extension that helps you grind on Faceit",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.faceit.com/*",
+                "https://www.faceit.com/*/*",
+                "https://faceit.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "action":{
+        "default_popup": "popup.html"
+    }
+}
